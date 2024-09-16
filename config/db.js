@@ -7,12 +7,9 @@ dotenv.config();
 const db = new pg.Client({
     user:"postgres",
     host:"localhost",
-    database:"book_note_db",
+    database:"book_notes_db",
     password:process.env.db_password,
     port:process.env.PORT
 })
-
-
-
 
 export default db;

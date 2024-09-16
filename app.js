@@ -1,4 +1,4 @@
-import express from " express";
+import express from "express";
 import authRoute from "./routes/authRoute.js"
 import bookNoteRoute from "./routes/bookNoteRoute.js"
 import apiRoute from "./routes/apiRoute.js"

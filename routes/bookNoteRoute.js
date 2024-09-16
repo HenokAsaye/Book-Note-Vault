@@ -1,6 +1,6 @@
-import {Router} from "Router";
-import {findNote , createOrUpdate} from "../controllers/bookNoteController"
-import {auth} from "../middleware/authMiddleware"
+import {Router} from "express";
+import {findNote , createOrUpdate} from "../controllers/bookNoteController.js"
+import {auth} from "../middleware/authMiddleware.js"
 
 const router = Router();
 

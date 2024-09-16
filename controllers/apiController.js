@@ -1,4 +1,4 @@
-import {fetchCover} from "../utils/externalApi"
+import {fetchCover} from "../utils/externalApi.js"
 
 export const getCover = async(req,res)=>{
     const {isbn} = req.params

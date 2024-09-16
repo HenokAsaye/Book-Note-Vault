@@ -1,4 +1,4 @@
-import { findAllNote,createOrUpdateNote } from "../models/bookNoteModel";
+import { findAllNote,createOrUpdateNote } from "../models/bookNoteModel.js";
 
 
 export const findNote = async(req,res)=>{
