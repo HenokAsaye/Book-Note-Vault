@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const fetchCover = async(ISBN)=>{
-    const api_url =( `https://covers.openlibrary.org/books/api?bibskey=ISBN:${ISBN}&format=json&jscmd=data;`)
+    const api_url =( `https://covers.openlibrary.org/b/ISBN/${ISBN}-L.jpg`)
     try{
         const response = axios.get(api_url)
         return response.data
