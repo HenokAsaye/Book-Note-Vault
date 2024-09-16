@@ -4,7 +4,7 @@ import {auth} from "../middleware/authMiddleware"
 
 const router = Router();
 
-router.get("/Note",auth,findNote);
-router.post("/updateNote",auth,createOrUpdate);
+router.get("/",auth,findNote);
+router.post("/",auth,createOrUpdate);
 
 export default router;
