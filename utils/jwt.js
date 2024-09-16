@@ -3,12 +3,12 @@ import dotenv from "dotenv"
 
 dotenv.config();
 
-export const generateAuthToken = (user)=>{
-    try{
-        const token = jwt.sign({id:user.id},process.env.JWT_KEY)
-        return token
-    }catch(error){
+export const generateAuthToken = (user) => {
+    try {
+        const token = jwt.sign({ user: user.id || user.user_id }, process.env.JWT_KEY);
+        return token;
+    } catch (error) {
         console.log(error);
-        throw error
+        throw error;
     }
-}
+};
